@@ -1,0 +1,137 @@
+.background123 {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("https://miro.medium.com/v2/resize:fit:1400/1*5lyavS59mazOFnb55Z6znQ.png");
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  position: center;
+  padding: 10px 10px 0; /* Adjust the padding as desired */
+  background-position: center;
+  
+  
+}
+.edit-profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 150px;
+  
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ce0014;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+  
+      span {
+        /* Add your styles for the username and email values here */
+        font-weight: bold;
+        color: #333;
+        font-size: 18px;
+      text-decoration: underline;
+      }
+    }
+  
+    .edit-button {
+      /* Add your styles for the edit button here */
+      background-color: #333;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    
+  
+      &:hover {
+        background-color: #b2070f;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+
+      label {
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+
+      input {
+        padding: 8px;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .error {
+        color: red;
+        margin-top: 6px;
+        font-size: 14px;
+      }
+    }
+
+    .save-button {
+      padding: 8px 16px;
+      background-color: #e50914;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 150px;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: #b2070f;
+      }
+    }
+  }
+
+  .success {
+    color: green;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.label-text {
+  color: red;
+}
+

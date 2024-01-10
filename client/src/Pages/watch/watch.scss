@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;900&display=swap");
+
+.watch-container {
+  color: #ffffff;
+  font-family: "Gabarito", sans-serif;
+}
+
+.metadata-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.limit {
+  border: 1px solid gray;
+  padding: 1px 2px;
+  margin: 0 10px;
+  height: 25px;
+}
+.tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.background {
+  position: center;
+  padding: 10px 10px 0; /* Adjust the padding as desired */
+  background-size: 600px 571px; /* Adjust the background size to 951px width and 571px height */
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.details-container {
+  height: 820px;
+  padding: 0 10px 10px; /* Adjust the padding as desired */
+  background-size: 600px 450px; /* Adjust the background size to 871px width and 511px height */
+  font-family: "Gabarito", sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.3) blur(1px); /* Adjust brightness and blur values as desired */
+  z-index: -1;
+}
+
+.poster img {
+  margin-top: 4rem;
+  width: 300px; /* Adjust the width as desired */
+  height: 450px; /* Adjust the height as desired */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+  padding-left: 2rem;
+  margin-top: 4rem;
+  color: #ffffff;
+}
+
+.details h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Gabarito", sans-serif;
+  color: #ffffff;
+}
+
+.details p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-family: "Gabarito", sans-serif;
+  color: #ffffff;
+}
+
+.metadata {
+  font-size: 1.25rem;
+  font-family: "Gabarito", sans-serif;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+.rating {
+  margin-top: 1rem;
+  top: 70%;
+  left: 70%;
+  right: 70%; /* Adjust this value to move it to the right */
+  transform: translateX(75.25%); /* Adjust this value to move it down */
+  width: 100px; /* Adjust the width and height as needed */
+  height: 1000px;
+  border-radius: 50%;
+}
+
+.actress-photos {
+  margin-top: 2rem;
+}
+
+.actress-photos h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.photo-list li {
+  width: 8rem;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.photo-list li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-list li p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.buttons {
+  display: flex;
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 20%;
+    background-color: #032541;
+  }
+}
+.loadingSpinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-left-color: #ffffff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

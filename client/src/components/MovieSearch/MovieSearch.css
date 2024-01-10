@@ -1,0 +1,99 @@
+/* MovieSearch.css */
+/* Style for the search container */
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the search box container */
+.search-box-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the search input box */
+.ais-SearchBox-input {
+  border: none;
+  border-bottom: 2px solid #333;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #ffffff;
+  width: 250px;
+  transition: border-color 0.3s ease;
+}
+
+.ais-SearchBox-input:focus {
+  outline: none;
+  border-color: #d40000;
+}
+.ais-SearchBox-submit {
+  display: none;
+}
+.ais-SearchBox-reset {
+  display: none;
+}
+.ais-SearchBox-input::placeholder {
+  color: #ffffff; /* Set the placeholder text color to white */
+}
+
+/* Style for the search results container */
+.ais-Hits-list {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  background-color: #000000;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+}
+
+/* Style for the search result title */
+.ais-Hits-item h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.ais-Hits-item p {
+  font-size: 14px;
+  margin: 5px 0;
+  max-height: 3.7em; /* Limit the description to 3 lines (adjust as needed) */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  white-space: pre-line; /* Allow line breaks within the description */
+}
+.ais-Hits-item h4 {
+  font-size: 15px;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}
+/* Style for the search result description */
+.ais-Hits-item {
+  margin-bottom: 20px; /* Adjust the margin between search results */
+  padding: 10px;
+  border-bottom: 1px solid #ff0000; /* Customize the border color */
+  border-radius: 5px;
+  background-color: #000000; /* Customize the background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  display: flex; /* Make the result items flex containers */
+  align-items: center; /* Center content vertically */
+}
+
+/* Style for showing the results when the search box is focused */
+.search-container:hover .ais-Hits-list {
+  display: block;
+}
+.ais-Hits-item img {
+  width: 200px !important; /* Add !important to increase specificity */
+  height: 120px !important;
+  margin-right: 10px;
+}
+
+/* Style for the line between search results */

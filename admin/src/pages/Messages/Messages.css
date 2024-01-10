@@ -1,0 +1,52 @@
+.messages {
+  flex: 4;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.messages h2 {
+  margin-bottom: 20px;
+}
+
+.notification-form {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 300px;
+}
+
+.form-group {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.form-group > label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  padding: 10px;
+}
+
+.submit-button {
+  height: 30px;
+  margin-top: 10px;
+  margin-left: auto; /* Center the button horizontally */
+  margin-right: auto; /* Center the button horizontally */
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+}
